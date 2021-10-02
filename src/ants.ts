@@ -65,7 +65,7 @@ export class Bee extends Insect {
   readonly name:string = 'Bee';
   private status:string;
   /**
-   * The Bee has a 3 armor and deals 1 damage by default.
+   * The Bee has 3 armor and deals 1 damage by default.
    * @param armor armor of a Bee
    * @param damage damage dealt by a Bee
    * @param place place of a Bee
@@ -190,7 +190,7 @@ export class ThrowerAnt extends Ant {
   /**
    * This function provides actions for the ThrowerAnt.
    * 
-   * If the boost is used, apply status/do extend range damage to the bee
+   * If the boost is used, apply status/do extend range damage to the Bee
    * 
    */
   act() {
@@ -274,7 +274,7 @@ export class EaterAnt extends Ant {
   /**
    * This function subtracts the EaterAnt's armor.
    * 
-   * Releases bee out of the stomach after a certain amount of turns or dies
+   * Releases Bee out of the stomach after a certain amount of turns or dies
    * 
    * @param amount armor to be subtracted
    * @returns true if the Eater's armor < 0, otherwise false

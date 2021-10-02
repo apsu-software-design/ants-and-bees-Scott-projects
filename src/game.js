@@ -190,7 +190,7 @@ var Hive = /** @class */ (function (_super) {
         return _this;
     }
     /**
-     * This function will add waves of Bees given the turn and number of Bees.
+     * This function adds waves of Bees given the turn and number of Bees.
      *
      * Iterates through the number of Bees and creating Bee objects to be put into a waves array
      * @param attackTurn number of turns the Bee will show in the Ant Colony

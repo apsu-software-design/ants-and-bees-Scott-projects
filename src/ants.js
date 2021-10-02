@@ -18,6 +18,11 @@ exports.__esModule = true;
 exports.GuardAnt = exports.ScubaAnt = exports.EaterAnt = exports.ThrowerAnt = exports.GrowerAnt = exports.Ant = exports.Bee = exports.Insect = void 0;
 var game_1 = require("./game");
 var Insect = /** @class */ (function () {
+    /**
+     * This abstract constructor provides the definition for all clases that extend from Insect class
+     * @param armor Insect's armor
+     * @param place place of the Insect
+     */
     function Insect(armor, place) {
         this.armor = armor;
         this.place = place;
@@ -70,6 +75,12 @@ var Insect = /** @class */ (function () {
 exports.Insect = Insect;
 var Bee = /** @class */ (function (_super) {
     __extends(Bee, _super);
+    /**
+     * The Bee has 3 armor and deals 1 damage by default.
+     * @param armor armor of a Bee
+     * @param damage damage dealt by a Bee
+     * @param place place of a Bee
+     */
     function Bee(armor, damage, place) {
         var _this = _super.call(this, armor, place) || this;
         _this.damage = damage;
@@ -123,6 +134,12 @@ var Bee = /** @class */ (function (_super) {
 exports.Bee = Bee;
 var Ant = /** @class */ (function (_super) {
     __extends(Ant, _super);
+    /**
+     * This abstract constructor provides the defintion for all classes that extend from the Ant class.
+     * @param armor Ant's armor
+     * @param foodCost cost of the food of an Ant
+     * @param place place of the Ant
+     */
     function Ant(armor, foodCost, place) {
         if (foodCost === void 0) { foodCost = 0; }
         var _this = _super.call(this, armor, place) || this;
@@ -147,6 +164,9 @@ var Ant = /** @class */ (function (_super) {
 exports.Ant = Ant;
 var GrowerAnt = /** @class */ (function (_super) {
     __extends(GrowerAnt, _super);
+    /**
+     * The GrowerAnt has 1 armor and 1 food cost.
+     */
     function GrowerAnt() {
         var _this = _super.call(this, 1, 1) || this;
         _this.name = "Grower";

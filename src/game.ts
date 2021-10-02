@@ -50,8 +50,8 @@ class Place {
   /**
    * This function finds the closest Bee in the Ant colony given the maxDistance
    * and minDistance.
-   * @param maxDistance maximum distance to find bee in the vicinity
-   * @param minDistance minimum distance to find bee in the vicinity
+   * @param maxDistance maximum distance to find Bee in the vicinity
+   * @param minDistance minimum distance to find Bee in the vicinity
    * @returns returns the closest Bee if found, otherwise undefined if no Bee is found
    */
   getClosestBee(maxDistance:number, minDistance:number = 0):Bee {
@@ -271,7 +271,7 @@ class AntColony {
    */
   getQueenPlace():Place { return this.queenPlace; }
   /**
-   * This function checks if there are bees at the Queen's place.
+   * This function checks if there are Bees at the Queen's place.
    * @returns true if there is at least 1 Bee, otherwise false
    */
   queenHasBees():boolean { return this.queenPlace.getBees().length > 0; }
